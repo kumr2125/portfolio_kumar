@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Harsh Kumar</title>
+    <meta name="description" content="Contact Harsh Kumar for internships, collaboration, and web development opportunities.">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a class="brand" href="portfolio.html"><span>Harsh</span> Kumar</a>
+            <nav aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="portfolio.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="experience.html">Experience</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero container">
+            <p class="eyebrow">Contact</p>
+            <h1>Let's connect and build something meaningful.</h1>
+            <p>
+                I am open to internships, collaboration, and project discussions.
+                Choose the channel that works best for you.
+            </p>
+        </section>
+
+        <section class="contact-grid container" aria-label="Contact links">
+            <article class="contact-card">
+                <h2>Email</h2>
+                <p>For opportunities and direct project inquiries.</p>
+                <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </article>
+
+            <article class="contact-card">
+                <h2>LinkedIn</h2>
+                <p>Professional profile, education, and networking.</p>
+                <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">View LinkedIn</a>
+            </article>
+
+            <article class="contact-card">
+                <h2>GitHub</h2>
+                <p>Code samples and technical project repositories.</p>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </article>
+
+            <article class="contact-card">
+                <h2>Instagram</h2>
+                <p>General updates and creative snapshots.</p>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">View Instagram</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <p>(c) 2026 Harsh Kumar</p>
+            <a href="portfolio.html">Back to homepage</a>
+        </div>
+    </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll(".nav-link");
+        const currentPage = window.location.pathname.split("/").pop() || "contact.html";
+
+        navLinks.forEach(link => {
+            const href = link.getAttribute("href");
+            if (href === currentPage) {
+                link.classList.add("active");
+                link.setAttribute("aria-current", "page");
+            }
+        });
+    </script>
+</body>
+</html>
