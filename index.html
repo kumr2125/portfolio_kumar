@@ -13,10 +13,10 @@
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a class="brand" href="portfolio.html"><span>Harsh</span> Kumar</a>
+            <a class="brand" href="index.html"><span>Harsh</span> Kumar</a>
             <nav aria-label="Primary">
                 <ul class="nav-list">
-                    <li><a class="nav-link" href="portfolio.html">Home</a></li>
+                    <li><a class="nav-link" href="index.html">Home</a></li>
                     <li><a class="nav-link" href="about.html">About</a></li>
                     <li><a class="nav-link" href="experience.html">Experience</a></li>
                     <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -101,7 +101,7 @@
 
     <script>
         const navLinks = document.querySelectorAll(".nav-link");
-        const currentPage = window.location.pathname.split("/").pop() || "portfolio.html";
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
 
         navLinks.forEach(link => {
             const href = link.getAttribute("href");
